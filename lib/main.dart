@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:crm_wookroom/presentation/pages/dashboards/a_dashboard.dart';
-
+import 'package:crm_wookroom/presentation/reponsive_ui/pages/dashboard/dashboard.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -11,9 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'CRM Wookroom',
-      home: const ADashboard(), // gọi Dashboard ở đây
+      title: 'Responsive Dashboard',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+      ),
+      home: const ResponsiveLayout(),
     );
   }
 }
