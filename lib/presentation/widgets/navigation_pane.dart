@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
 class NavigationPane extends StatelessWidget {
+  const NavigationPane({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,4 +18,3 @@ class NavigationPane extends StatelessWidget {
     );
   }
 }
-
